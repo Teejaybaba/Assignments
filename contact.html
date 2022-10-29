@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+  <section id="contact">
+    <div class="title">
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="sub-title">
+      <p>
+        Drop me a message.I would love to hear from you
+      </p>
+    </div>
+    <div class="contact">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="cover">
+          <label for="fullName" class="text">Your Full Name</label>
+          <input type="text" id="name" class="field-one" required />
+        </div>
+        <div class="cover-spec">
+          <div class="cover-spec-one">
+            <label for="email" class="text">Your Email Address</label>
+            <input type="email" id="email" class="field-one" required />
+          </div>
+          <div class="cover-spec-two">
+            <label for="subject" class="text">Subject</label>
+            <select name="subject" id="subject" class="field-two" required>
+              <option value="">Choose Subject</option>
+              <option value="Hire">Hire</option>
+              <option value="Inquiry">Inquiry</option>
+              <option value="Message">Message</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="cover">
+              <label for="message" class="text">Message</label>
+              <textarea id="message" class="field-three" required></textarea>
+            </div>
+            <button type="submit">SEND</button>
+      </form>
+    </div>
+  </section>
